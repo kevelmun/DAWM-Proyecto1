@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #161B22;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.navbar a {
+  float: right;
+  display: flex;
+  
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+h1{
+  font-size: 300%;
+  color: #FFFFFF;
+}
+
+.main {
+  background-color: #0D1117;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 20%;
+  width: 100%;
+  
+}
+
+
+.Perfil {
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+#Nombre {
+	color:#1F6ADF;
+}
+#Informacion {
+	color: #C7D0D8;
+  padding-left: 37%;
+  padding-right: 37%;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161B22;
+  height: 100%;
+  width: 100%;
+  
+}
+
+h2 {
+  padding-top: 20px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.aboutMe .divider {
+  width: 100px;
+  height: 1px;
+  background-color: #FFFFFF;
+  
+}
+
+
+#aboutInfo {
+  text-align: center;
+  align-items: center;
+  color: #C7D0D8;
+  
+}
+#aboutInfo p{
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#aboutInfo li{
+  text-align: center;
+  
+}
+
+.tableInfo{
+  margin-top: 10px;
+}
+
+.tableInfo th {
+  color: #FFFFFF;
+}
+
+tr{
+  text-align: center;
+  font-weight: bold;
+}
+td {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 0.8cm;
+}
+
+th {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1cm;
+}
+
+.tableInfo .alto {
+
+  color: #4FA75D;
+}
+
+.tableInfo .medio {
+
+  color: #A7A34F;
+}
+
+.tableInfo .bajo {
+
+  color: #A12727;
+}
+
+
+.portafolio {
+  background-color: #161B22;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.portafolio .divider {
+  width: 75px;
+  height: 1px;
+  background-color: #FFFFFF;
+  
+}

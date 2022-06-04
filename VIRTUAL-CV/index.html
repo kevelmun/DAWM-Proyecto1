@@ -3,36 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <center><img src="https://cdn.icon-icons.com/icons2/2760/PNG/512/profile_icon_176363.png" width="200"></center>
-  <h1><center>Kevin Elihan Muñoz Calva</center></h1>
-  <h3><center>Portafolio Web</center></h3>
+  <title>CV</title>
+  <link href="skin/style.css" rel="stylesheet" type="text/css" />
+
+ 
 </head>
-<wbr>
+
 <body>
-  <h2>INFORMACION PERSONAL</h2>
-  <ul>
-    <li><b>Fecha de nacimiento: </b>10/03/2001</li>
-    <li><b>Lugar de nacimineto: </b>Macara-Loja-Ecuador</li>
-    <li><b>Idiomas: </b>Español/Ingles</li>
-    <li><b>Titulacion: </b>Ingeniero en Computacion</li>
-    <li><b>Universidad: </b>Escuela Superior Politecnica del Litoral</li>
-    <li> <b>Redes sociales: </b><a href="https://www.facebook.com/kevinelihan.munoz/">Facebook</a> <a href="https://www.linkedin.com/in/kevin-elihan-muñoz-calva-a1a160215/">Linkedin</a></li>
+
+  <div class="navbar">
+    <nav>
+    <a href="#">Contáctame</a>          
+    <a href="#">Portafolio</a>           
+    <a href="#aboutSection">Acerca de mí</a>
+    <a href="#home">Home</a>
+    </nav>
     
-  </ul>
+  </div>
   
-  <center><table border="1" align ="center">
+  <div id="home" class="main"> 
     
-    <caption>Lenguajes de Programacion</caption>
-    <tr><th>Lenguaje</th> <th>Nivel</th></tr>
-    <tr><td>Java</td><td>Avanzado</td></tr>
-    <tr><td>Python</td><td>Medio</td></tr>
-    <tr><td>C</td><td>Medio</td></tr>
-    <tr><td>SQL</td><td>Medio</td></tr>
-  </table></center>
-  <wbr>
-  <footer>Copyrights © 2022 Todos los Derechos Reservados. </footer>
+      <div id="mainSection" class="Perfil">
+        <h1>Hola, soy <span id="Nombre" class="Titulo"> Kevin Muñoz</span>;</h1>
+      </div>
+      <div class="Perfil">
+        <img src="imagenes/profile_icon.png" width="200">
+      </div>
+      <div>
+        <p id="Informacion"  class="Perfil">Hola!, mi nombre es Kevin Muñoz, soy un estudiante de Ingenieria en Computacion Ecuatoriano, actualmente estoy cursonado el 6to semestre en la Espol, y esta pagina es el primer proyecto relacionado con la materia de Desarrollo de Aplicaciones Web y Mobiles</p>
+      </div>
+      <div id="audioInfo"  class="Perfil">
+        <audio controls>
+          <source>
+        </audio>
+      </div>
+    
+
+
+
+
+    
+  </div>
+
+  <div id=aboutSection class="aboutMe">
+
+    <div id="aboutInfo" class="aboutMe">
+      <h2>Acerca de mí</h2>
+      <div class="divider"></div>
+      <p>
+        Nací el 10 de marzo del 2001 en la ciudad de Macará-Loja, estudié 11 años en la Unidad Educativa Marista para posterioremente mudarme a la ciudad de Guayaquil en donde terminé mi educación en la Unidad Educativa Bilingüe Boston. Actualmente, ingresé a la Escuela Superior Politécnica del Litoral en donde estoy cursando el 6to semestre en la carrera de Ingeniería en Computación.
+      </p>
+      <div>
+        Idiomas:
+          <li>Ingles</li>
+          <li>Espanol</li>
+      </div>
+      
+    </div>
+
+    <div class="tableInfo">
+      <table border="2px"  align="center">
+        <tr> 
+          <th>Lenguaje</th> <th>Nivel</th> 
+        </tr>
+  
+        <tr>
+          <td><img src="imagenes/java_icon.png" alt="java" width="80"></td><td class="alto">Alto</td>
+        </tr>
+  
+        <tr>
+          <td><img src="imagenes/python_icon.png" alt="python" width="80"></td><td class="medio">Medio</td>
+        </tr>
+  
+        <tr>
+          <td><img src="imagenes/mysql_icon.png" alt="mysql" width="80"></td><td class="alto">Alto</td>
+        </tr>
+
+        <tr>
+          <td> <img src="imagenes/c_icon.png" alt="c" width="80"></td><td class="bajo">Bajo</td>
+        </tr>
+          
+        </table>
+    </div>
+  </div>
+  
+  <div id="portafolioSection" class="portafolio">
+    <div class="portafolio">
+      <h2>Portafolio</h2>
+      <div class="divider"></div>
+    </div>
+  </div>
+  
+
   <script src="script.js"></script>
 
   
