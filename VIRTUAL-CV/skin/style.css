@@ -3,9 +3,14 @@
   font-family: 'Nunito', sans-serif;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   overflow: hidden;
-  background-color: #161B22;
+  background-color: #262C35;
   position: fixed;
   top: 0;
   width: 100%;
@@ -101,7 +106,10 @@ h2 {
   
 }
 
-.tableInfo{
+.tableInfo table {
+  border: #233341;
+  padding-bottom: 20px;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -142,7 +150,7 @@ th {
 
 
 .portafolio {
-  background-color: #161B22;
+  background-color: #0D1117;
   display: flex;
   flex-direction: column;
   
@@ -152,5 +160,81 @@ th {
   width: 75px;
   height: 1px;
   background-color: #FFFFFF;
+  margin-bottom: 20px;
   
+}
+
+.projectTitle {
+  color:#161B22;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 0.45cm;
+}
+
+#contenedorScroll {
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+ 
+  grid-template-columns: 0px 56% 0px;
+  justify-content: space-around;
+  
+  
+}
+
+.scrollSection {
+ background-color: #A12727;
+  --_spacer: 1rem;
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 36%;
+  padding: 0 2rem var(--_spacer);
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+ /* overflow-x: hidden;*/
+}
+
+.scrollableItem{
+  --radius-2: 28px;
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  width: 5cm;
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  background-color: #D9D9D9;
+  box-shadow: var(--shadow-5);
+  
+
+}
+
+.scrollableItem > img {
+  inline-size: 100%;
+  aspect-ratio: 0;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: mandatory inline;
+  scroll-padding: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+
+}
+
+.icon {
+  
+  background-color: transparent;
+  font-size: 50px;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }

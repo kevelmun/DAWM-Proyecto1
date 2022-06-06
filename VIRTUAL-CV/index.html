@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>CV</title>
   <link href="skin/style.css" rel="stylesheet" type="text/css" />
-
+  <link rel="icon" href="imagenes/arrow.png">
  
 </head>
 
@@ -14,7 +14,7 @@
   <div class="navbar">
     <nav>
     <a href="#">Contáctame</a>          
-    <a href="#">Portafolio</a>           
+    <a href="#portafolioSection">Portafolio</a>           
     <a href="#aboutSection">Acerca de mí</a>
     <a href="#home">Home</a>
     </nav>
@@ -58,32 +58,31 @@
           <li>Ingles</li>
           <li>Espanol</li>
       </div>
-      
-    </div>
 
-    <div class="tableInfo">
-      <table border="2px"  align="center">
-        <tr> 
-          <th>Lenguaje</th> <th>Nivel</th> 
-        </tr>
+      <div class="tableInfo">
+        <table border="2px" class="tableInfo">
+          <tr> 
+            <th>Lenguaje</th> <th>Nivel</th> 
+          </tr>
+    
+          <tr>
+            <td><img src="imagenes/java_icon.png" alt="java" width="80"></td><td class="alto">Alto</td>
+          </tr>
+    
+          <tr>
+            <td><img src="imagenes/python_icon.png" alt="python" width="80"></td><td class="medio">Medio</td>
+          </tr>
+    
+          <tr>
+            <td><img src="imagenes/mysql_icon.png" alt="mysql" width="80"></td><td class="alto">Alto</td>
+          </tr>
   
-        <tr>
-          <td><img src="imagenes/java_icon.png" alt="java" width="80"></td><td class="alto">Alto</td>
-        </tr>
-  
-        <tr>
-          <td><img src="imagenes/python_icon.png" alt="python" width="80"></td><td class="medio">Medio</td>
-        </tr>
-  
-        <tr>
-          <td><img src="imagenes/mysql_icon.png" alt="mysql" width="80"></td><td class="alto">Alto</td>
-        </tr>
-
-        <tr>
-          <td> <img src="imagenes/c_icon.png" alt="c" width="80"></td><td class="bajo">Bajo</td>
-        </tr>
-          
+          <tr>
+            <td> <img src="imagenes/c_icon.png" alt="c" width="80"></td><td class="bajo">Bajo</td>
+          </tr>
+            
         </table>
+      </div>
     </div>
   </div>
   
@@ -92,6 +91,45 @@
       <h2>Portafolio</h2>
       <div class="divider"></div>
     </div>
+
+    
+  </div>
+  <div id="contenedorScroll" class="portafolio">
+
+    <div>
+      <button class="icon" onclick="scrolll()"> <i class="fas fa-angle-double-left"><img src="imagenes/arrowL.png" alt="arrow"></i></button>
+    </div>
+
+    <div class="scrollSection snaps-inline">
+      
+      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Ruletas numéricas">
+        <p class="projectTitle">Ruletas numéricas</p>
+      </div>
+     
+      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Bingo Minecraft">
+        <p class="projectTitle">Bingo Minecraft</p>
+      </div>
+      
+      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
+        <p class="projectTitle">Comming soon...</p>
+      </div>
+    
+      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
+        <p class="projectTitle">Comming soon...</p>
+      </div>
+      
+      <div class="scrollableItem"> <img src="imagenes/Github_icon.png" alt="Comming soon...">
+        <p class="projectTitle">Comming soon...</p>
+      </div>
+      
+      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
+        <p class="projectTitle">Comming soon...</p>
+      </div>
+    </div>
+    <div>
+        <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"><img src="imagenes/arrow.png" alt="arrow"></i></button>
+    </div>
+
   </div>
   
 
@@ -101,3 +139,4 @@
 </body>
 
 </html>
+<!-- <i class="fas fa-angle-double-left"></i> -->
