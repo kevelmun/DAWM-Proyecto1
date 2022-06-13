@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
 * {
   font-family: 'Nunito', sans-serif;
 }
@@ -34,6 +37,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  
 }
 h1{
   font-size: 300%;
@@ -41,6 +45,7 @@ h1{
 }
 
 .main {
+  
   background-color: #0D1117;
   display: grid;
   align-items: center;
@@ -54,7 +59,24 @@ h1{
   text-align: center;
   padding-top: 30px;
 }
+table {
+  resize: none;
+}
 
+#picContainer {
+  background-color: #464444;
+  margin-left: 44%;
+  margin-right: 44%;
+  border-radius: 25%; 
+  box-shadow: 0px 10px 15px; 
+  resize: none;
+}
+
+.Perfil img {
+  border-radius: 50%;
+  margin-top: -5%;
+  margin-bottom: 5%;
+}
 
 #Nombre {
 	color:#1F6ADF;
@@ -70,8 +92,7 @@ h1{
   flex-direction: column;
   align-items: center;
   background-color: #161B22;
-  height: 100%;
-  width: 100%;
+  
   
 }
 
@@ -80,6 +101,7 @@ h2 {
   color: #FFFFFF;
   margin-bottom: 0px;
 }
+
 
 .aboutMe .divider {
   width: 100px;
@@ -91,25 +113,25 @@ h2 {
 
 #aboutInfo {
   text-align: center;
-  align-items: center;
   color: #C7D0D8;
   
 }
-#aboutInfo p{
+.aboutMe {
+  
+  color: #FFFFFF;
   text-align: center;
+}
+.aboutMe p {
   margin-left: 30%;
   margin-right: 30%;
 }
 
-#aboutInfo li{
-  text-align: center;
-  
-}
+
 
 .tableInfo table {
   border: #233341;
   padding-bottom: 20px;
-  align-items: center;
+ text-align: center;
   margin-top: 10px;
 }
 
@@ -118,12 +140,11 @@ h2 {
 }
 
 tr{
-  text-align: center;
+  
   font-weight: bold;
 }
 td {
-  padding-left: 50px;
-  padding-right: 50px;
+ 
   font-size: 0.8cm;
 }
 
@@ -155,6 +176,9 @@ th {
   flex-direction: column;
   
   align-items: center;
+  
+  width: 100%;
+  
 }
 .portafolio .divider {
   width: 75px;
@@ -180,35 +204,46 @@ th {
   grid-template-columns: 0px 56% 0px;
   justify-content: space-around;
   
-  
+  margin-bottom: 5%;
+}
+.scrollableItem a {
+  text-decoration: none;
 }
 
+.scrollableItem a:hover {
+  color: #FFFFFF;
+  border-radius: 10px;
+}
 .scrollSection {
- background-color: #A12727;
+  /*QUITAR BACKG COLOR*/
+ /*background-color: #A12727;*/
   --_spacer: 1rem;
   display: grid;
   gap: var(--_spacer);
   grid-auto-flow: column;
+  
+  /*AQUI*/
   grid-auto-columns: 36%;
-  padding: 0 2rem var(--_spacer);
-  overflow-x: scroll;
+  padding: 0 0cm 1rem 4rem;
+  overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-behavior: smooth;
   scrollbar-width: none;
- /* overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 
 .scrollableItem{
   --radius-2: 28px;
   display: grid;
+  background: var(--surface-2);
   grid-template-rows: min-content;
   gap: var(--_spacer);
   width: 5cm;
   padding: var(--_spacer);
-  background: var(--surface-2);
+  margin-top: 20px;
   border-radius: var(--radius-2);
   background-color: #D9D9D9;
-  box-shadow: var(--shadow-5);
+  box-shadow: 0px 10px 15px;
   
 
 }
@@ -220,13 +255,14 @@ th {
 }
 
 .snaps-inline {
-  scroll-snap-type: mandatory inline;
-  scroll-padding: var(--_spacer, 1rem);
+  scroll-snap-type: inline mandatory ;
+  scroll-padding-inline: var(--_spacer, 1rem);
 }
 
 .snaps-inline > * {
-  scroll-snap-align: start;
-
+	/*Y AQUI*/
+  scroll-snap-align: center;
+  
 }
 
 .icon {
@@ -237,4 +273,106 @@ th {
   border: none;
   padding: 0;
   cursor: pointer;
+  user-select: none;
+}
+
+.contactame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161B22;
+  
+  
+}
+.contactame .divider {
+  width: 150px;
+  height: 1px;
+  background-color: #FFFFFF;
+  
+  margin: auto;
+  margin-bottom: 10%;
+  
+}
+
+form {
+
+  margin: 0 auto;
+  width: 500px;
+  height: 430px;
+  border-radius: 5%;
+  padding: 40px 30px;
+  
+  background-color: #D9D9D9;
+ 
+}
+form label {
+  color: #726D6D;
+  font-size-adjust: 0.5em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+input, textarea {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+form  button {
+  border: none;
+  background-color: #464444;
+  color: #FFFFFF;
+  width: 80px;
+  height: 35px;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  
+  
+}
+
+
+input, label {
+  display: block;
+  
+}
+
+.field {
+  padding-top: 7px;
+  padding-bottom: 3px;
+  padding-right: 69%;
+  text-size-adjust: 100em;
+  
+}
+
+.buttonContainer {
+  text-align: right;
+}
+
+.contactame iframe {
+  margin-top: 1%;
+  width:80rem;
+  border-radius: 10px;
+  padding-bottom: 5%;
+}
+
+.footer {
+  background-color: #0D1117;
+  color: #C7D0D8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.socialMedia a {
+  margin-top: 5%;
+  float: right;
+  display: flex;
+  text-align: center;
+  padding: 14px 50px;
+
+  
 }

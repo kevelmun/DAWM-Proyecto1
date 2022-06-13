@@ -2,9 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>CV</title>
-  <link href="skin/style.css" rel="stylesheet" type="text/css" />
+  <link href="skin/mobStyle.css" rel="stylesheet" type="text/css"/>
+  <link href="skin/style.css" rel="stylesheet" type="text/css"/>
+  
   <link rel="icon" href="imagenes/arrow.png">
  
 </head>
@@ -13,7 +15,7 @@
 
   <div class="navbar">
     <nav>
-    <a href="#">Contáctame</a>          
+    <a href="#contactameSection">Contáctame</a>          
     <a href="#portafolioSection">Portafolio</a>           
     <a href="#aboutSection">Acerca de mí</a>
     <a href="#home">Home</a>
@@ -26,9 +28,11 @@
       <div id="mainSection" class="Perfil">
         <h1>Hola, soy <span id="Nombre" class="Titulo"> Kevin Muñoz</span>;</h1>
       </div>
-      <div class="Perfil">
-        <img src="imagenes/profile_icon.png" width="200">
-      </div>
+      <table id="picContainer" class="Perfil">
+        <!-- <img src="imagenes/profile_icon.png" width="200"> -->
+        <td> <img src="imagenes/foto.png" width="200"></td>
+        
+      </table>
       <div>
         <p id="Informacion"  class="Perfil">Hola!, mi nombre es Kevin Muñoz, soy un estudiante de Ingenieria en Computacion Ecuatoriano, actualmente estoy cursonado el 6to semestre en la Espol, y esta pagina es el primer proyecto relacionado con la materia de Desarrollo de Aplicaciones Web y Mobiles</p>
       </div>
@@ -37,12 +41,7 @@
           <source>
         </audio>
       </div>
-    
 
-
-
-
-    
   </div>
 
   <div id=aboutSection class="aboutMe">
@@ -50,6 +49,8 @@
     <div id="aboutInfo" class="aboutMe">
       <h2>Acerca de mí</h2>
       <div class="divider"></div>
+    </div>
+    <div class="aboutMe">
       <p>
         Nací el 10 de marzo del 2001 en la ciudad de Macará-Loja, estudié 11 años en la Unidad Educativa Marista para posterioremente mudarme a la ciudad de Guayaquil en donde terminé mi educación en la Unidad Educativa Bilingüe Boston. Actualmente, ingresé a la Escuela Superior Politécnica del Litoral en donde estoy cursando el 6to semestre en la carrera de Ingeniería en Computación.
       </p>
@@ -58,6 +59,8 @@
           <li>Ingles</li>
           <li>Espanol</li>
       </div>
+    </div>
+      
 
       <div class="tableInfo">
         <table border="2px" class="tableInfo">
@@ -83,7 +86,7 @@
             
         </table>
       </div>
-    </div>
+    
   </div>
   
   <div id="portafolioSection" class="portafolio">
@@ -93,7 +96,7 @@
     </div>
 
     
-  </div>
+  
   <div id="contenedorScroll" class="portafolio">
 
     <div>
@@ -102,36 +105,97 @@
 
     <div class="scrollSection snaps-inline">
       
-      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Ruletas numéricas">
-        <p class="projectTitle">Ruletas numéricas</p>
-      </div>
-     
-      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Bingo Minecraft">
-        <p class="projectTitle">Bingo Minecraft</p>
-      </div>
+        <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Ruletas numéricas">
+          <a href="https://github.com/kevelmun/RuletasNumericas" class="projectTitle">Ruletas numéricas</a>
+        </div>
       
-      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
-        <p class="projectTitle">Comming soon...</p>
-      </div>
-    
-      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
-        <p class="projectTitle">Comming soon...</p>
-      </div>
+        <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Bingo Minecraft">
+          <a href="https://github.com/cgranja28/LoteriaMinecraft" class="projectTitle">Loteria Minecraft</a>
+        </div>
+        
+        <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
+          <a href="" class="projectTitle">Comming soon...</a>
+        </div>
       
-      <div class="scrollableItem"> <img src="imagenes/Github_icon.png" alt="Comming soon...">
-        <p class="projectTitle">Comming soon...</p>
+        <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
+          <a href="" class="projectTitle">Comming soon...</a>
+        </div>
+        
+        <div class="scrollableItem"> <img src="imagenes/Github_icon.png" alt="Comming soon...">
+          <a href="" class="projectTitle">Comming soon...</a>
+        </div>
+        
+        <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
+          <a href="" class="projectTitle">Comming soon...</a>
+        </div>
       </div>
-      
-      <div class="scrollableItem"><img src="imagenes/Github_icon.png" alt="Comming soon...">
-        <p class="projectTitle">Comming soon...</p>
+      <div>
+          <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"><img src="imagenes/arrow.png" alt="arrow"></i></button>
       </div>
+
     </div>
-    <div>
-        <button class="icon" onclick="scrollr()"> <i class="fas fa-angle-double-right"><img src="imagenes/arrow.png" alt="arrow"></i></button>
+  </div>
+
+
+  <div id="contactameSection" class="contactame">
+    
+    <div class="contacatame">
+      <h2>Contáctame</h2>
+      <div class="divider"></div>
+    </div>
+    
+    <div class="contactame">
+      <form action="" id="contactForm">
+
+        <div>
+          <label for="names">Nombre y Apellido</label>
+          <input type="text" name="names" id="names" class="field">
+        </div>
+
+        <div>
+          <label for="empresa">Empresa</label>
+          <input type="text" name="empresa" id="empresa"  class="field">
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email"  class="field">
+        </div>
+
+        <div>
+          <label for="asunto">Asunto</label>
+          <textarea name="asunto" id="asunto" rows="10" class="field"></textarea>
+        </div>
+
+        <div class="buttonContainer">
+          <button id="sendButton" >Enviar</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="contactame">
+      <h2>Encuéntrame en</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3987.022011807953!2d-79.96583427485179!3d-2.1452552949062684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1655074000178!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
   </div>
-  
+
+
+  <div class="footer">
+    <div class="socialMedia">
+      <nav>
+        <a href="https://www.linkedin.com/in/kevin-elihan-muñoz-calva-a1a160215/"><img src="imagenes/linkedin.png" alt="linkedin"></a>   
+        <a href="https://www.instagram.com/elihanmc10/"><img src="imagenes/insta.png" alt="instagram"></a>          
+        <a href="https://www.facebook.com/kevinelihan.munoz"><img src="imagenes/face.png" alt="facebook"></a>   
+        </nav>
+    </div>
+     
+    
+    <p>Copyrights © 2022 Todos los Derechos Reservados.</p>
+
+  </div>
+
 
   <script src="script.js"></script>
 
@@ -139,4 +203,3 @@
 </body>
 
 </html>
-<!-- <i class="fas fa-angle-double-left"></i> -->
