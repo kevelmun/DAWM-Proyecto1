@@ -1,6 +1,149 @@
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
   
+*{
+  --padding-top: 2%;
+}
+  /*NAVBAR*/
+.navbar {
+  position: fixed;
+
+}
+
+.navbar .menuButton {
+  display: block;
+  margin-left: 1em;
+  grid-column: 1/1;
+  z-index: 3;
+}
+
+.navbar .menuButton img{
+  width: 3em;
+  cursor: pointer;
+}
+
+.navbar .menu {
+  transform: translateX(-150%);
+  transition: all 0.8s;
+  position: absolute;
+  width: 36%;
+  height: 50vh;
+  display: grid;
+  align-items: center;
+  
+  background-color: #262C35;
+  margin-top:  30em;
+  margin-left: -4em;
+  z-index: 2;
+  border-radius: 0px 0px 20px 0px;
+  min-width: 160px;
+  max-width: 200px;
+  
+}
+
+.navbar .menuButton {
+  transform: translateX(0%); 
+}
+
+
+/*MAIN*/
+.main{
+  padding-top: var(--padding-top);
+  padding-bottom: 5%;
+}
+.main .Perfil h1 {
+  padding-top: 1rem;
+  
+}
+.main .PerfilInfo {
+  min-width: 15rem;
+  max-width: 20rem;
+  margin-bottom: 2%;
+}
+
+/*ABOUT ME*/
+.aboutMe {
+  padding-top: var(--padding-top);
+}
+.aboutMe p {
+  text-align: center;
+  
+  display: flex;
+  margin: auto;
+  min-width: 15rem;
+  max-width: 20rem;
+  margin-bottom: 4%;
+}
+
+.aboutMe .tableInfo {
+  
+  color: #FFFFFF;
+  align-items: center;
+  min-width: 40vh;
+  max-width: 50vh;
+
+}
+.aboutMe .tableInfo img {
+  width: 4rem;
+}
+
+/*PORTAFOLIO*/
+.portafolio {
+  padding-top: var(--padding-top);
+}
+
+
+
+
+/*CONTACTAME*/
+.contactame{
+  margin-top: -6%;
+}
+
+.contactForm {
+  width: 60%;
+  max-width: 390px;
+  height: 50%;
+  max-height: 380px;
+
+  margin-bottom: 7%;
+  
+}
+.formContainer {
+  display: grid;
+  gap: .5em;
+}
+
+.field {
+  padding: .3em .1em;
+}
+.contactForm #asunto {
+  max-height: 90px;
  
+}
+
+.contactForm button {
+  width: 55px;
+  height: 30px;
+  font-size: 0.7em;
   
+}
+
+
+/*TAL VEZ*/
+.googlemap {
+  height: 50%;
   
+}
+/*-TAL VEZ-*/
+
+
+/*FOOTER*/
+
+.socialMedia a{
+ 
+  width: 20px;
+}
+
+
+
 }
