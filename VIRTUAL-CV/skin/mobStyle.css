@@ -91,8 +91,13 @@
   padding-top: var(--padding-top);
 }
 
+.scrollSection {
+  grid-auto-columns: 150%;
+}
 
-
+#contenedorScroll {
+  grid-template-columns: 50px 250px 50px;
+}
 
 /*CONTACTAME*/
 .contactame{
@@ -147,3 +152,5 @@
 
 
 }
+
+

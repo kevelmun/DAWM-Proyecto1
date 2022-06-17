@@ -238,9 +238,10 @@ audio {
 }
 
 #contenedorScroll {
+
   text-align: center;
   display: grid;
-  gap: 1rem;
+  
   grid-auto-flow: column;
  
   grid-template-columns: 0px 56% 0px;
@@ -266,7 +267,7 @@ audio {
   
   /*AQUI*/
   grid-auto-columns: 36%;
-  padding: 0cm 0cm 0rem 2rem;
+  padding: 0cm 0cm 0rem 0rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-behavior: smooth;
@@ -277,7 +278,7 @@ audio {
 .scrollableItem{
   --radius-2: 28px;
   display: grid;
-  background: var(--surface-2);
+ 
   grid-template-rows: min-content;
   gap: var(--_spacer);
   width: 5cm;
@@ -286,7 +287,7 @@ audio {
   border-radius: var(--radius-2);
   background-color: #D9D9D9;
   box-shadow: 0px 10px 15px;
-  
+  user-select: none;
 
 }
 
@@ -297,7 +298,8 @@ audio {
 }
 
 .snaps-inline {
-  scroll-snap-type: inline mandatory ;
+  scroll-snap-type: inline mandatory;
+  
   scroll-padding-inline: var(--_spacer, 1rem);
 }
 
@@ -316,13 +318,8 @@ audio {
   padding: 0;
   cursor: pointer;
   user-select: none;
+  
 }
-
-
-
-
-
-
 
 
 /* CONTACTAME*/
@@ -452,4 +449,5 @@ audio {
   padding-left: 50px;
   padding-right: 50px;
   
+  user-select: none;
 }

@@ -1,0 +1,21 @@
+
+@media only screen and (max-width: 1000px){
+    .scrollSection {
+      grid-auto-columns: 100%;
+      gap: 5rem;
+      
+      
+    }
+    
+    #contenedorScroll {
+      
+      grid-template-columns: 0px 56% 0px;
+      justify-content: space-evenly;
+    }
+    
+    #firstItem {
+        margin-left: 30%;
+    }
+
+    
+  }
