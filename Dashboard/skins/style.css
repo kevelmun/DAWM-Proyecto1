@@ -1,0 +1,17 @@
+
+body {
+    
+    background-color: #31363D;
+    width: 100%;
+   
+}
+
+body h1 {
+    text-align: center;
+    color: aliceblue;
+}
+.containerClass {
+    display: grid;
+    margin: auto;
+    
+}
