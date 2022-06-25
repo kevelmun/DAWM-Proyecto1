@@ -6,7 +6,7 @@ body {
    
 }
 
-body h1 {
+body h1, p {
     text-align: center;
     color: aliceblue;
 }

@@ -10,7 +10,7 @@ function cargarDatos() {
   .then(data => {
     
   
-    //console.log(data);
+    console.log(data);
     tabla(data);
    
   })
