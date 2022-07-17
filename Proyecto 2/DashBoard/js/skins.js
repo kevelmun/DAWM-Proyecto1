@@ -84,11 +84,17 @@ function cargarPackBanners() {
         weaponDataContainer.innerHTML="";
         for (let i = 0; i < data.data.length; i++) {
             if (data.data[i].displayName.indexOf(nombre)>-1) {
-                if (data.data[i].chromas[0].displayIcon==null) {
+
+                if (data.data[i].displayIcon!=null) {
                     imagen = data.data[i].displayIcon
-                }else{
+                    
+                }else if(data.data[i].chromas[0].displayIcon!=null){
                     imagen = data.data[i].chromas[0].displayIcon
+                }else{
+                    imagen = data.data[i].chromas[0].fullRender
                 }
+
+        
                 
 
                 
