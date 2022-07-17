@@ -14,7 +14,7 @@ function cargarPackBanners() {
     .then(data =>{
         for (let n = 0; n < data.data.length; n++) {
             
-            if (data.data[n].displayName!="Orgullo") {
+            if (data.data[n].displayName!="Orgullo" && data.data[n].displayName!="Retribución" && data.data[n].displayName!="Memorables") {
                 arrayPacks.push(data.data[n])
                
             }
